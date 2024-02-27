@@ -1,0 +1,304 @@
+
+body {
+	font-family: Arial;
+	color: #211a1a;
+	font-size: 0.9em;
+}
+
+.text-right {
+	text-align: right;
+}
+
+#shopping-cart {
+	margin: 40px;
+}
+
+#product-grid {
+	margin: 40px;
+}
+
+#shopping-cart table {
+	width: 100%;
+	background-color: #F0F0F0;
+}
+
+#shopping-cart table td {
+	background-color: #FFFFFF;
+}
+
+.txt-heading {
+	color: #211a1a;
+	border-bottom: 1px solid #E0E0E0;
+	overflow: auto;
+}
+
+#btnEmpty {
+	background-color: #ffffff;
+	border: #d00000 1px solid;
+	padding: 5px 10px;
+	color: #d00000;
+	float: right;
+	text-decoration: none;
+	border-radius: 3px;
+	margin: 10px 0px;
+	cursor: pointer;
+}
+
+.add-to-cart {
+    padding: 5px 10px;
+    margin-left: 5px;
+    background-color: #efefef;
+    border: #E0E0E0 1px solid;
+    color: #211a1a;
+    text-decoration: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+#product-grid .txt-heading {
+	margin-bottom: 18px;
+}
+
+.product-item {
+	float: left;
+	background: #ffffff;
+	margin: 30px 30px 0px 0px;
+	border: #E0E0E0 1px solid;
+	padding: 10px 10px 20px 10px;
+    line-height: 30px;
+    text-align: center;
+}
+
+.product-image {
+	height: 155px;
+	width: 250px;
+	background-color: #FFF;
+}
+
+.clear-float {
+	clear: both;
+}
+
+.demo-input-box {
+	border-radius: 2px;
+	border: #CCC 1px solid;
+	padding: 2px 1px;
+}
+
+.tbl-cart {
+	font-size: 0.9em;
+}
+
+.tbl-cart th {
+	font-weight: normal;
+}
+
+.product-title {
+	margin-bottom: 20px;
+}
+
+.product-price {
+	float:left;
+}
+
+.product-quantity {
+    padding: 5px 10px;
+    border-radius: 3px;
+    border: #E0E0E0 1px solid;
+}
+
+.product-tile-footer {
+    padding: 15px 15px 0px 15px;
+    overflow: auto;
+}
+
+.cart-item-image {
+	width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: #E0E0E0 1px solid;
+    padding: 5px;
+    vertical-align: middle;
+    margin-right: 15px;
+}
+.no-records {
+	text-align: center;
+	clear: both;
+	margin: 38px 0px;
+}
+
+.box {
+	width: 100%;
+	background: #333;
+	display: inline-block
+}
+#icon {
+	color: #fff;
+	font-size: 18px;
+	position: relative;
+	top: 5px;
+	font-weight: 500;
+	cursor: pointer;
+	padding-left: 10px;
+}
+#icon a {
+	text-decoration: none
+}
+nav {
+	display: none
+}
+nav ul {
+	list-style-type: none;
+	padding-left: 0;
+	font-size: 0;
+	background-color: #333
+}
+nav li {
+	display: block;
+	font-size: 16px;
+	color: white;
+	margin: 0 5px;
+}
+ul.navArea>li>a {
+	color: #fff
+}
+nav a {
+	display: block;
+	padding: 10px;
+	text-decoration: none;
+	color: inherit
+}
+.sub-menu li {
+	list-style-type: none;
+	display: inline-block;
+	width: 140px;
+}
+ul.navArea li ul.sub-menu {
+	display: none;
+	position: absolute
+}
+ul.navArea li {
+	position: relative;
+}
+ul.navArea li:hover ul.sub-menu {
+	display: block
+}
+.sub-menu li {
+	margin-left: 0!important
+}
+ul.sub-menu>li>a {
+	color: #fff;
+}
+ul.navArea>li>a:hover, ul.sub-menu>li>a:hover {
+	color: deepskyblue;
+}
+#searchBox {
+	display: inline-block;
+	padding-top: 4px;
+	padding-right: 5px;
+	float: right
+}
+#searchBox input {
+	width: 300px;
+	float: left;
+	border-radius: 2px 0 0 2px;
+	font-size: 14px;
+	box-sizing: border-box;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	font: inherit
+}
+#submitBtn {
+	width: auto!important;
+	float: right;
+	border-radius: 0 5px 5px 0;
+	background: deepskyblue;
+	font-size: 13px;
+	font-weight: 600;
+	text-shadow: 0 1px 0 rgba(0, 0, 0, 0.3);
+	color: #fff
+}
+@media only screen and (max-width:720px) {
+	nav ul {
+		width: 100%!important
+	}
+	#sub-menu {
+		display: none
+	}
+	nav a {
+		padding: 5px 10px
+	}
+	.box {
+		padding: 5px;
+	}
+	#navArea {
+		display: none;
+		height: 24px;
+		line-height: 24px;
+	}
+	.toggle-nav {
+		padding: 6px 10px
+	}
+	#searchBox input {
+		width: 150px;
+		padding: 5px;
+		margin: 0;
+	}
+	#icon img {
+		width: 22px;
+	}
+}
+@media only screen and (min-width:720px) {
+	#icon {
+		display: none
+	}
+	#navArea {
+		height: 50px;
+		line-height: 50px;
+	}
+	nav {
+		display: block!important
+	}
+	nav li {
+		display: inline-block
+	}
+	#searchBox input {
+		height: 50px;
+		padding: 10px;
+		margin: 5px 0;
+	}
+	#icon img {
+		width: 22px;
+	}
+}
+
+
+.within {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: #3498db;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.box:hover {
+    transform: scale(1.1);
+    box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.3);
+}
